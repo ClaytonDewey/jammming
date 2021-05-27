@@ -1,6 +1,6 @@
 const client_id = "a3ad6940f4664f17aadb4906e0d0a8e8";
 // const redirect_uri = "http://localhost:3000";
-const redirect_uri = "http://dryadmedia.surge.sh/";
+const redirect_uri = "https://www.claytondewey.com/jammming";
 const spotify_url = `https://accounts.spotify.com/authorize?response_type=token&scope=playlist-modify-public&client_id=${client_id}&redirect_uri=${redirect_uri}`;
 let accessToken = undefined;
 let expiresIn = undefined;

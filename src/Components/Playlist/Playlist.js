@@ -14,14 +14,19 @@ class Playlist extends React.Component {
 
     render() {
         return (
-            <div className="Playlist">
+            <div className="playlist grid__item">
+                <label htmlFor="playlistName" className="playlist__label">
+                    Your Playlist Name:
+                </label>
                 <input
+                    className="playlist__input"
+                    id="playlistName"
                     defaultValue={this.props.playlistName}
                     name={this.props.playlistName}
                     onChange={this.handleNameChange}
                 />
                 <TrackList tracks={this.props.playlistTracks} onRemove={this.props.onRemove} isRemoval={true} />
-                <button className="Playlist-save" onClick={this.props.onSave}>
+                <button className="btn btn-primary mt-3" onClick={this.props.onSave}>
                     SAVE TO SPOTIFY
                 </button>
             </div>
