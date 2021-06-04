@@ -38,6 +38,13 @@ class Track extends React.Component {
     render() {
         return (
             <div className="track__item mb-3">
+                <img
+                    alt=""
+                    src={this.props.track.image.url}
+                    width={this.props.track.image.width}
+                    height={this.props.track.height}
+                    className="mr-1 mb-1"
+                />
                 <div className="track__info">
                     <h3>{this.props.track.name}</h3>
                     <p>
